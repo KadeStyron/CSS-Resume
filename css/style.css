@@ -166,6 +166,8 @@ section a:hover {
   background-color: #8D8E8E;
   padding: 16px;
   border-radius: 6px;
+  box-shadow: #0E4044;
+  outline: #0E4044 solid 1px;
 }
 
 .card h3 {
