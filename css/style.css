@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    background-color: #BBBBBF;
+    color: #0E4044;
+  }
+
+/****************   Nav Section **********************/
+/* reset */
+* { margin: 0; padding: 0; }
+
+/* navbar defaults for wider screens */
+.navbar {
+  padding: 1px;
+  background-color: #475B5A;
+  border-bottom: 3px solid #8D8E8E;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-img { 
+  width: 50px;
+  height: 50px;
+  padding: 0px 20px;
+}  
+
+.navbar .logo a { 
+  color: #BBBBBF;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navlist { 
+  justify-content: center;
+  color: #BBBBBF;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  list-style: none;
+}
+
+.navlist a { 
+  align-items: center;
+  color: #BBBBBF;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+}
+
+.navlist a:hover { 
+  color: #A3A9AA;
+  text-decoration: underline;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  background-color: #475B5A;
+  text-align: center;
+  border-top: 1px solid #8D8E8E;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: #BBBBBF;
+}
+footer div {
+  margin: 0px 20px;
+}
+
+/*********** Splash Page ************************/
+header {
+  background-color: #BBBBBF;
+  text-align: center;
+  border-bottom: 1px solid #8D8E8E;
+  display: flex;
+  justify-content: space-around;
+}
+
+header h1 {
+  font-family: 'Georgia', serif;
+  font-size: 4em;
+  font-style: italic;
+  align-self: center;
+  color: #475B5A;
+}
+
+header img {
+  border-radius: 75% 50%;
+  border: 3px solid #475B5A;
+}
+
+.address {
+  font-size: 0.8em;
+  text-align: right;
+  color: #475B5A;
+}
+
+.tagline {
+  font-size: 1.5em;
+  font-style: italic;
+  margin: 0px 20px 20px 0px;
+  text-align: center;  
+  color: #475B5A;
+}
+
+/************* Sections ********************/
+hr {
+  border-color: #8D8E8E;
+}
+
+section h3 {
+  color: #0E4044;
+  font-size: 1.5em;
+  font-family: Merriweather, serif;
+}
+
+section dl {
+  display: grid;
+  gap: 10px;
+}
+
+section dt {
+  grid-column: 1;
+  
+}
+
+section dd {
+  grid-column: 2;
+  justify-self: end;
+  margin-right: 5px;
+}
+
+section ul {
+  color: #475B5A;
+  list-style-type: square;
+
+}
+
+section a {
+  color: #475B5A;
+  text-decoration: none;
+
+}
+
+section a:hover {
+  color: #52D1DC;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-column: 3;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: space-around;
+  margin: 20px;
+  
+}
+
+.card img {
+  border-radius: 10%;
+  border: 2px solid #475B5A;
+  max-width: 150px;
+  max-height: 150px;
+  margin-left: 20px;;
+}
+
+.card {
+  box-shadow: #0E4044;
+  outline: #0E4044 solid 1px;
+  background-color: #8D8E8E;
+  padding: 15px;
+  border-radius: 2px;
+}
+
+
+/**************   Responsiveness   *****************/
+
+@media (max-width: 680px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   }
+
+.navlist { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  block-size: auto;
+  list-style: none;
+}
+
+.navlist a { 
+  flex-direction: column;
+  border-top: 1px solid rgb(255, 255, 255, 0.3);
+  display: block;
+  width: 100%;
+}
+
+.three-col {
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+}
+
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: grid;
+  gap: 10px;
+  grid-column: 1;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+input {
+  padding: 0px 15px;
+  border: 2px solid #475B5A;
+  background: #BBBBBF;
+  margin: 10px;
+}
+
+textarea {
+  padding: 0px 10px;
+  border: 2px solid #475B5A;
+  background: #BBBBBF;
+  margin: 10px;
+
+}
+
+button[type="submit"] {
+  padding: 0px 16px;
+  border: 2px solid #A3A9AA;
+  border-radius: 4px;
+  background: #A3A9AA;
+  color: #475B5A;
+  margin: 0px 40%;
+}
+
+button[type="submit"]:hover {
+  background: #8D8E8E;
+  color: #BBBBBF;
+}
+
+
