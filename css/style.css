@@ -162,22 +162,33 @@ section a:hover {
   
 }
 
+.card {
+  background-color: #8D8E8E;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
 .card img {
+  display: block;
+  margin: 0 auto 8px auto;
   border-radius: 10%;
   border: 2px solid #475B5A;
-  max-width: 150px;
-  max-height: 150px;
-  margin-left: 20px;;
+  max-width: 120px;
+  max-height: 120px;
 }
 
-.card {
-  box-shadow: #0E4044;
-  outline: #0E4044 solid 1px;
-  background-color: #8D8E8E;
-  padding: 15px;
-  border-radius: 2px;
-}
 
+.card li {
+  padding-left: 18px;
+  margin-bottom: 5px;
+}
 
 /**************   Responsiveness   *****************/
 
