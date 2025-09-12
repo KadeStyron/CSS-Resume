@@ -113,6 +113,10 @@ hr {
   border-color: #8D8E8E;
 }
 
+section {
+  margin: 5px;
+}
+
 section h3 {
   color: #0E4044;
   font-size: 1.5em;
@@ -258,7 +262,7 @@ button[type="submit"] {
   border-radius: 4px;
   background: #A3A9AA;
   color: #475B5A;
-  margin: 0px 40%;
+  margin: 5px 40%;
 }
 
 button[type="submit"]:hover {
